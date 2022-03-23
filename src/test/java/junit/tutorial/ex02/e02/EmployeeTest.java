@@ -20,7 +20,7 @@ class EmployeeTest {
 //		InputStream input = new ByteArrayInputStream(str.getBytes("utf-8"));
 		
 		try{
-			InputStream input = new FileInputStream("/Users/yunosuke/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/JunitExam/src/main/java/junit/tutorial/ex02/e02/Employee.txt");
+			InputStream input = new FileInputStream("./src/main/java/junit/tutorial/ex02/e02/Employee.txt");
 			List<Employee> result = Employee.load(input);
 			assertEquals("Ichiro",result.get(0).getFirstName(),"Employeeファイルを指定してloadメソッドを実行した場合");
 		}catch(FileNotFoundException e){
