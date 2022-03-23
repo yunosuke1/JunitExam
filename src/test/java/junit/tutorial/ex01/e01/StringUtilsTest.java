@@ -8,7 +8,7 @@ class StringUtilsTest {
 
 	@Test
 	void test1() {
-		assertEquals("aaa",StringUtils.toSnakeCase("aaa"),"toSnakeCaseの引数がaaaのケース");
+		assertEquals("aa",StringUtils.toSnakeCase("aaa"),"toSnakeCaseの引数がaaaのケース");
 	}
 	
 	@Test
